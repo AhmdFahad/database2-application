@@ -16,4 +16,10 @@ public class Review {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @Column(name = "rating", nullable = false)
+    private Integer rating;
+
+    @Column(name = "comment")
+    private String comment;
+
 }
