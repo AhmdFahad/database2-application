@@ -1,9 +1,6 @@
 package org.ahamdah.database2application.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,4 +25,7 @@ public class Room {
     @Column(name = "price")
     private Double price;
 
+    @OneToOne(mappedBy = "room", orphanRemoval = true)
+    private Reservation reservation;
+    
 }

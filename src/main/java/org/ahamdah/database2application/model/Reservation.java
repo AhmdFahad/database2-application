@@ -23,4 +23,16 @@ public class Reservation {
     @Column(name = "check_in_date", nullable = false)
     private Date checkInDate;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "guest_guest_id")
+    private Guest guest;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "staff_id")
+    private Staff staff;
+
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "room_id")
+    private Room room;
+
 }

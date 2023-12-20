@@ -1,9 +1,6 @@
 package org.ahamdah.database2application.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,5 +18,9 @@ public class Amenities {
 
     @Column(name = "desciption")
     private String desciption;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "room_id")
+    private Room room;
 
 }

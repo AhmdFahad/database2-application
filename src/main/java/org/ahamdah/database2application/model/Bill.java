@@ -1,9 +1,6 @@
 package org.ahamdah.database2application.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +12,10 @@ public class Bill {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
+
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "guest_guest_id")
+    private Guest guest;
 
     @Column(name = "total_amount")
     private String totalAmount;

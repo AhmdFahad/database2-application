@@ -1,9 +1,6 @@
 package org.ahamdah.database2application.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,5 +18,9 @@ public class Review {
 
     @Column(name = "comment")
     private String comment;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "guest_guest_id")
+    private Guest guest;
 
 }
