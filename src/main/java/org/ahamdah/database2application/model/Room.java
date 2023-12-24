@@ -1,12 +1,14 @@
 package org.ahamdah.database2application.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@Builder
 @Table(name = "room")
 public class Room {
     @Id

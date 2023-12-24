@@ -1,6 +1,7 @@
 package org.ahamdah.database2application;
 
 import org.ahamdah.database2application.model.Guest;
+import org.ahamdah.database2application.model.Room;
 import org.ahamdah.database2application.repository.GuestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -27,5 +28,13 @@ public class Database2Application  implements CommandLineRunner{
                 age(20).
                 build();
         guestRepository.save(x);
+
+        var room= Room.builder().
+                floor("1").
+                availability(true).
+                price(123.3).
+                build();
+        guestRepository.save(x);
+
     }
 }
