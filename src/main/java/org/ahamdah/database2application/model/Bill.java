@@ -11,6 +11,7 @@ import lombok.Setter;
 public class Bill {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @OneToOne(orphanRemoval = true)

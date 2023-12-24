@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Database2Application implements CommandLineRunner {
+public class Database2Application  implements CommandLineRunner{
 
     public static void main(String[] args) {
         SpringApplication.run(Database2Application.class, args);

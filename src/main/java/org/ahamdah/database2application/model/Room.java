@@ -10,6 +10,7 @@ import lombok.Setter;
 @Table(name = "room")
 public class Room {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
@@ -27,5 +28,4 @@ public class Room {
 
     @OneToOne(mappedBy = "room", orphanRemoval = true)
     private Reservation reservation;
-    
 }

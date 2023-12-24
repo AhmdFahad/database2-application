@@ -10,9 +10,10 @@ import lombok.NoArgsConstructor;
 @Entity@Data
 @AllArgsConstructor@NoArgsConstructor
 @Builder
+
 public class Guest {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "guest_id", nullable = false)
     private Long guestId;
 
