@@ -1,14 +1,11 @@
 package org.ahamdah.database2application.model;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@Entity
 @Builder
+@Data@AllArgsConstructor@NoArgsConstructor
+@Entity
 @Table(name = "room")
 public class Room {
     @Id
@@ -28,6 +25,8 @@ public class Room {
     @Column(name = "price")
     private Double price;
 
-    @OneToOne(mappedBy = "room", orphanRemoval = true)
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "reservation_id")
     private Reservation reservation;
+
 }

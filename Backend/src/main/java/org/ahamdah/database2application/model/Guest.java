@@ -32,5 +32,4 @@ public class Guest {
     @Column(name = "email")
     private String email;
 
-
 }

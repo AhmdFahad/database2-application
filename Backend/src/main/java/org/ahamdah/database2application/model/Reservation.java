@@ -1,14 +1,14 @@
 package org.ahamdah.database2application.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor@NoArgsConstructor@Builder@Data
 @Table(name = "reservation")
 public class Reservation {
     @Id
@@ -28,9 +28,13 @@ public class Reservation {
     @JoinColumn(name = "guest_guest_id")
     private Guest guest;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+//    @ManyToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "staff_id")
+//    private Staff staff;
+
+    @ManyToOne
     @JoinColumn(name = "staff_id")
-    private Staff staff;
+    private Staff staff_id;
 
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "room_id")
