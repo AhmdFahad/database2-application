@@ -45,9 +45,9 @@ namespace DataBase2_project
 
             string email = GuestEmail.Text;
 
-            var client = new RestClient("http://192.168.43.87:8080");
+            var client = new RestClient("http://localhost:9000");
 
-            var request = new RestRequest("/", Method.Post);
+            var request = new RestRequest("/guest", Method.Post);
 
             var postData = new
             {

@@ -39,5 +39,10 @@ namespace DataBase2_project
         {
             Close();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

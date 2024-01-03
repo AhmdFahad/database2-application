@@ -52,7 +52,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(74, 28);
+            label5.Location = new Point(106, 44);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(135, 21);
@@ -62,20 +62,20 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(9, 8);
-            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Location = new Point(11, 12);
+            pictureBox3.Margin = new Padding(2, 3, 2, 3);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(61, 40);
+            pictureBox3.Size = new Size(91, 77);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 15;
             pictureBox3.TabStop = false;
             // 
             // GuestName
             // 
-            GuestName.Location = new Point(74, 114);
-            GuestName.Margin = new Padding(2);
+            GuestName.Location = new Point(85, 152);
+            GuestName.Margin = new Padding(2, 3, 2, 3);
             GuestName.Name = "GuestName";
-            GuestName.Size = new Size(233, 23);
+            GuestName.Size = new Size(266, 27);
             GuestName.TabIndex = 17;
             // 
             // label1
@@ -83,7 +83,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(74, 93);
+            label1.Location = new Point(85, 124);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(60, 21);
@@ -95,7 +95,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(443, 87);
+            label2.Location = new Point(506, 116);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(45, 21);
@@ -104,10 +104,10 @@
             // 
             // GuestSSN
             // 
-            GuestSSN.Location = new Point(443, 108);
-            GuestSSN.Margin = new Padding(2);
+            GuestSSN.Location = new Point(506, 144);
+            GuestSSN.Margin = new Padding(2, 3, 2, 3);
             GuestSSN.Name = "GuestSSN";
-            GuestSSN.Size = new Size(231, 23);
+            GuestSSN.Size = new Size(263, 27);
             GuestSSN.TabIndex = 19;
             // 
             // label3
@@ -115,7 +115,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(74, 209);
+            label3.Location = new Point(85, 279);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(131, 21);
@@ -124,10 +124,10 @@
             // 
             // GuestNo
             // 
-            GuestNo.Location = new Point(73, 232);
-            GuestNo.Margin = new Padding(2);
+            GuestNo.Location = new Point(83, 309);
+            GuestNo.Margin = new Padding(2, 3, 2, 3);
             GuestNo.Name = "GuestNo";
-            GuestNo.Size = new Size(233, 23);
+            GuestNo.Size = new Size(266, 27);
             GuestNo.TabIndex = 21;
             // 
             // label4
@@ -135,7 +135,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(443, 210);
+            label4.Location = new Point(506, 280);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(57, 21);
@@ -144,10 +144,10 @@
             // 
             // GuestEmail
             // 
-            GuestEmail.Location = new Point(443, 232);
-            GuestEmail.Margin = new Padding(2);
+            GuestEmail.Location = new Point(506, 309);
+            GuestEmail.Margin = new Padding(2, 3, 2, 3);
             GuestEmail.Name = "GuestEmail";
-            GuestEmail.Size = new Size(231, 23);
+            GuestEmail.Size = new Size(263, 27);
             GuestEmail.TabIndex = 23;
             // 
             // label6
@@ -155,7 +155,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(274, 333);
+            label6.Location = new Point(313, 444);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(44, 21);
@@ -164,19 +164,19 @@
             // 
             // GuestAge
             // 
-            GuestAge.Location = new Point(274, 354);
-            GuestAge.Margin = new Padding(2);
+            GuestAge.Location = new Point(313, 472);
+            GuestAge.Margin = new Padding(2, 3, 2, 3);
             GuestAge.Name = "GuestAge";
-            GuestAge.Size = new Size(226, 23);
+            GuestAge.Size = new Size(258, 27);
             GuestAge.TabIndex = 25;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(181, 436);
-            button1.Margin = new Padding(2);
+            button1.Location = new Point(207, 581);
+            button1.Margin = new Padding(2, 3, 2, 3);
             button1.Name = "button1";
-            button1.Size = new Size(137, 48);
+            button1.Size = new Size(157, 64);
             button1.TabIndex = 27;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.FromArgb(192, 0, 0);
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(747, 2);
+            label7.Location = new Point(854, 3);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
             label7.Size = new Size(20, 21);
@@ -198,10 +198,10 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(443, 436);
-            button2.Margin = new Padding(2);
+            button2.Location = new Point(506, 581);
+            button2.Margin = new Padding(2, 3, 2, 3);
             button2.Name = "button2";
-            button2.Size = new Size(137, 48);
+            button2.Size = new Size(157, 64);
             button2.TabIndex = 29;
             button2.Text = "Home";
             button2.UseVisualStyleBackColor = true;
@@ -209,10 +209,10 @@
             // 
             // Guest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkGreen;
-            ClientSize = new Size(774, 574);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(885, 765);
             Controls.Add(button2);
             Controls.Add(label7);
             Controls.Add(button1);
@@ -229,7 +229,7 @@
             Controls.Add(label5);
             Controls.Add(pictureBox3);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Guest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Guest";
