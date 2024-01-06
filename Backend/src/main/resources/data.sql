@@ -27,9 +27,12 @@ VALUES
 
 INSERT INTO room (id, availability, floor, type, price)
 VALUES
-    (201, 1, '1st Floor', 'Standard', 99.99),
-    (202, 1, '2nd Floor', 'Deluxe', 149.99),
-    (203, 1, '3rd Floor', 'Suite', 249.99);
+    (201, 0, '1st Floor', 'Standard', 99.99),
+    (202, 0, '2nd Floor', 'Deluxe', 149.99),
+    (203, 0, '3rd Floor', 'Suite', 249.99),
+    (204, 1, '3rd Floor', 'Suite', 249.99),
+    (205, 1, '3rd Floor', 'Suite', 249.99),
+    (206, 1, '3rd Floor', 'Suite', 249.99);
 
 INSERT INTO reservation (id, check_i_out_date, check_in_date, guest_guest_id, staff_id, room_id)
 VALUES

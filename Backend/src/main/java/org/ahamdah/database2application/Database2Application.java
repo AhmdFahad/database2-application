@@ -2,7 +2,9 @@ package org.ahamdah.database2application;
 
 import org.ahamdah.database2application.model.Guest;
 import org.ahamdah.database2application.model.Room;
+import org.ahamdah.database2application.model.Staff;
 import org.ahamdah.database2application.repository.GuestRepository;
+import org.ahamdah.database2application.repository.StaffRepositroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +20,9 @@ public class Database2Application  implements CommandLineRunner{
 
     @Autowired
     GuestRepository guestRepository;
+
+    @Autowired
+    StaffRepositroy staffRepositroy;
     @Override
     public void run(String... args) throws Exception {
         var x=Guest.builder().
@@ -29,12 +34,19 @@ public class Database2Application  implements CommandLineRunner{
                 build();
         guestRepository.save(x);
 
-        var room= Room.builder().
-                floor("1").
-                availability(true).
-                price(123.3).
+//        var room= Room.builder().
+//                floor("1").
+//                availability(true).
+//                price(123.3).
+//                build();
+//        guestRepository.save(x);
+//
+        var staff= Staff.builder().
+                phone("12312313312312").
+                position("Manager").
+                name("Ahmed").
+                email("Ahmad@Gmail.com").
                 build();
-        guestRepository.save(x);
-
+        staffRepositroy.save(staff);
     }
 }

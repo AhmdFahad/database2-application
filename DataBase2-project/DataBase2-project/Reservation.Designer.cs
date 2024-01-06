@@ -202,6 +202,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(236, 27);
             textBox1.TabIndex = 20;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // listBox2
             // 

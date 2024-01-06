@@ -35,26 +35,30 @@ namespace DataBase2_project
             //string indate = ReservationInDate.Text;
             //string outdate = ReservationOutDate.Text;
             //string roomid = ReservationRoomId.Text;
-
+            
             string customFormat = "yyyy-MM-dd"; // Custom format
             DateTime selectedDate1 = ReservationInDate.Value;
             DateTime selectedDate2 = ReservationOutDate.Value;
             string indate = selectedDate1.ToString(customFormat);
             string outdate = selectedDate2.ToString(customFormat);
 
-            if (selectedDate2 < selectedDate1)
+            if (selectedDate2 <= selectedDate1)
             {
                 MessageBox.Show("The 'Out' date cannot be before the 'In' date. Please select a valid date.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             var client = new RestClient("http://localhost:9000");
 
-            var request = new RestRequest("/reservation", Method.Post);
+            var request = new RestRequest("/reservation2", Method.Post);
 
             var postData = new
             {
-                checkIOutDate = outdate,
-                checkInDate = indate
+                checkOutDate = outdate,
+                checkInDate = indate,
+                userId = long.Parse(textBox1.Text),
+                roomID = long.Parse(ReservationRoomId.Text)
+
             };
 
             string jsonBody = JsonConvert.SerializeObject(postData);
@@ -71,6 +75,7 @@ namespace DataBase2_project
                 ReservationInDate.Text = "";
                 ReservationOutDate.Text = "";
                 ReservationRoomId.Text = "";
+                this.Refresh();
             }
             catch (Exception ex)
             {
@@ -251,6 +256,11 @@ namespace DataBase2_project
                 textBox1.Text = selectedGuest.GuestId.ToString();
 
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

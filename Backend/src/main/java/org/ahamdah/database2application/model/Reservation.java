@@ -18,13 +18,13 @@ public class Reservation {
 
     @Temporal(TemporalType.DATE)
     @Column(name = "check_i_out_date", nullable = false)
-    private Date checkIOutDate;
+    private Date checkOutDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "check_in_date", nullable = false)
     private Date checkInDate;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     @JoinColumn(name = "guest_guest_id")
     private Guest guest;
 
@@ -34,7 +34,7 @@ public class Reservation {
 
     @ManyToOne
     @JoinColumn(name = "staff_id")
-    private Staff staff_id;
+    private Staff staff;
 
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "room_id")
